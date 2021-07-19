@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Marks Percentage Calculator</string>
+    <string name="calculate">Calculate</string>
+    <string name="clear">Clear</string>
+    <string name="obtained_marks">Obtained Marks:</string>
+    <string name="total_marks">Total Marks:</string>
+</resources>

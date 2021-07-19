@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <LinearLayout
+            android:id="@+id/banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+
+            />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_below="@id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <TextView
+    android:id="@+id/head"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/obtained_marks"
+    android:layout_centerHorizontal="true"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    android:textColor="#9C27B0"
+    />
+
+    <EditText
+        android:id="@+id/obtain"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/head"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
+        android:background="@drawable/button_corner"
+        android:textCursorDrawable="@drawable/cursor"
+        android:inputType="number"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:textColorHint="#050505"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        />
+
+    <TextView
+        android:id="@+id/head1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_marks"
+        android:layout_below="@id/obtain"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#9C27B0"
+        />
+
+    <EditText
+        android:id="@+id/total"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/head1"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
+        android:background="@drawable/button_corner"
+        android:textCursorDrawable="@drawable/cursor"
+        android:inputType="number"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:textColorHint="#050505"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/total"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_stroke"
+        android:text="@string/calculate"
+        android:textAllCaps="false"
+        android:textColor="#E91E63"
+        android:textSize="25sp"
+        />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/calculate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_stroke"
+        android:text="@string/clear"
+        android:textAllCaps="false"
+        android:textColor="#03A9F4"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="40sp"
+        android:textColor="#9C27B0"
+        android:textStyle="bold"
+        android:layout_below="@id/clear"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+
+        <Button
+            android:id="@+id/btCopyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_below="@+id/percentage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Copy Percentage"
+            />
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
